@@ -64,8 +64,11 @@ function App() {
     setcalculo(value);
   };
 
+
   const calcular = () => {
-    setcalculo(eval(calculo).toString());
+    // eslint-disable-next-line
+    const calcular = eval(calculo).toString()
+    setcalculo(calcular);
   };
 
   return (
